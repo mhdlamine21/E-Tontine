@@ -1,0 +1,26 @@
+# Fichiers de configuration et secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Dépendances Composer
+vendor/
+composer.phar
+
+# Fichiers d'environnement système et éditeurs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers de logs et temporaires
+*.log
+*.tmp
+*.bak
+error_log
+
+# Scripts de test/scratch temporaires
+scratch/
