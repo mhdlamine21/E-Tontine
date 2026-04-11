@@ -1,0 +1,385 @@
+/* Bannière cagnotte */
+.banniere-cagnotte {
+  background: linear-gradient(
+    135deg,
+    var(--bleu-fonce) 0%,
+    var(--bleu-moy) 55%,
+    #d9762f 100%
+  );
+  border-radius: var(--rayon-xl);
+  padding: 22px 26px;
+  color: #fff;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  box-shadow: 0 8px 28px rgba(74, 46, 31, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.banniere-cagnotte-montant {
+  font-size: 32px;
+  font-weight: 800;
+}
+.banniere-cagnotte-label {
+  font-size: 13px;
+  opacity: 0.8;
+}
+.banniere-cagnotte-sous {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+/* Info distribution */
+.info-distribution {
+  background: var(--bleu-fond);
+  border: 1px solid var(--bleu-pale);
+  border-radius: var(--rayon-md);
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* Score fiabilité */
+.score-fiabilite {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.score-haut {
+  color: var(--vert);
+}
+.score-moyen {
+  color: var(--orange);
+}
+.score-bas {
+  color: var(--rouge);
+}
+
+.onglets-dashboard {
+  display: inline-flex;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 12px;
+  background: var(--bleu-fond);
+  border: 1px solid var(--bleu-pale);
+  margin-bottom: 16px;
+}
+
+.onglet-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: var(--bleu-moy);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.onglet-item:hover {
+  text-decoration: none;
+  background: rgba(193, 96, 46, 0.08);
+}
+
+.onglet-item.actif {
+  background: var(--bleu-moy);
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(193, 96, 46, 0.25);
+}
+
+@media (max-width: 640px) {
+  .onglets-dashboard {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .onglet-item {
+    width: 100%;
+  }
+}
+
+.dashboard-premium {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.dashboard-haut {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.carte-solde {
+  background: linear-gradient(140deg, #4a2e1f 0%, #c1602e 70%, #e0a63e 100%);
+  color: #fff;
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 32px rgba(74, 46, 31, 0.28);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.carte-solde h2 {
+  font-size: 1rem;
+  margin: 4px 0 8px;
+  font-weight: 600;
+}
+
+.montant-solde {
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.illustration-finance {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.piece-or {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f4c847 0%, #cf9b19 100%);
+  color: #3d2114;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(207, 155, 25, 0.35);
+}
+
+.carte-gestion {
+  background: #fff;
+  border: 1px solid rgba(227, 214, 196, 0.9);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.carte-gestion h3 {
+  color: var(--bleu-fonce);
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.ligne-beneficiaire {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-widgets {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.dashboard-widgets .section-tableau {
+  margin-bottom: 0;
+}
+
+.panneau-flottant {
+  margin-bottom: 16px;
+  box-shadow: 0 20px 44px rgba(74, 46, 31, 0.14);
+  border: 1px solid rgba(227, 214, 196, 0.85);
+}
+
+.mobile-preview {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.mobile-card {
+  width: min(280px, 100%);
+  border-radius: 24px;
+  background: linear-gradient(180deg, #5c3b28 0%, #3a2418 100%);
+  color: #fff;
+  padding: 14px;
+  box-shadow: 0 14px 36px rgba(74, 46, 31, 0.34);
+}
+
+.mobile-head {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mobile-solde {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.mobile-solde strong {
+  display: block;
+  margin-top: 2px;
+}
+
+.mobile-card .liste-simple li {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(255, 255, 255, 0.14);
+}
+
+.mobile-card .btn {
+  margin-top: 8px;
+}
+
+.carte-solde-texte {
+  flex: 1;
+  min-width: 0;
+}
+
+.carte-solde-legende {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 44ch;
+}
+
+.accueil-dashboard .accueil-stats {
+  margin-bottom: 18px;
+}
+
+.accueil-soustitre {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--gris-sec);
+}
+
+.accueil-carte-suivre__intro {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--gris-sec);
+  line-height: 1.45;
+}
+
+.accueil-nom-tontine {
+  color: var(--bleu-fonce);
+}
+
+.accueil-detail-tontine {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--gris-texte);
+  line-height: 1.4;
+}
+
+.accueil-actions-suivre {
+  margin-top: 12px;
+}
+
+.accueil-table-vide {
+  color: var(--gris-sec);
+  padding: 20px;
+}
+
+.panneau-flottant--accueil {
+  margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-haut {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-widgets {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .dashboard-widgets {
+    grid-template-columns: 1fr;
+  }
+  .mobile-preview {
+    justify-content: center;
+  }
+}
+
+/* Vue tontine - description + ordre de la cagnotte */
+.tontine-description-vue {
+  margin: 12px 0 0;
+  max-width: 720px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--gris-texte);
+}
+
+.section-ordre-cagnotte {
+  margin-bottom: 22px;
+}
+
+.ordre-cagnotte-intro {
+  margin: -8px 0 14px;
+  font-size: 13px;
+}
+
+.liste-ordre-cagnotte {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.liste-ordre-cagnotte li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--rayon-md);
+  border: 1px solid rgba(227, 214, 196, 0.85);
+  background: var(--blanc);
+}
+
+.liste-ordre-cagnotte--actuel {
+  border-color: rgba(34, 139, 84, 0.35);
+  background: rgba(34, 139, 84, 0.06);
+}
+
+.liste-ordre-cagnotte__rang {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--bleu-fond);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--bleu-fonce);
+}
+
+.liste-ordre-cagnotte--actuel .liste-ordre-cagnotte__rang {
+  background: rgba(34, 139, 84, 0.2);
+  color: var(--vert);
+}
+
+.liste-ordre-cagnotte__nom {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  color: var(--bleu-fonce);
+}
+
+.ordre-cagnotte-suivant {
+  margin-top: 14px;
+  margin-bottom: 0;
+}
